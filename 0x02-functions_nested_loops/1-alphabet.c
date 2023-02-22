@@ -1,9 +1,6 @@
-#include <stdio.h>
 #include "main.h"
 /**
- * main - Entry
- * Function -  print_alphabet prints alphabets in lower case 'a' to 'z'
- * Return: 0
+ * print_alphabet - prints all lowercase letters in English alphabet
  */
 void print_alphabet(void)
 {
@@ -11,6 +8,7 @@ void print_alphabet(void)
 
 	for (c = 'a'; c <= 'z'; c++)
 	{
-		putchar(c);
+		_putchar(c);
 	}
+	_putchar('\n');
 }
