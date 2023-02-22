@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include "main.h"
 /**
- *main - Entry
- *print_alpabet - prints the alpha in lower case
- *Return: 0
+ * main - Entry
+ * Function -  print_alphabet prints alphabets in lower case 'a' to 'z'
+ * Return: 0
  */
 void print_alphabet(void)
 {
@@ -12,6 +12,5 @@ void print_alphabet(void)
 	for (c = 'a'; c <= 'z'; c++)
 	{
 		putchar(c);
-		putchar('\n');
 	}
 }
