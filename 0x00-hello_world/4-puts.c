@@ -1,7 +1,7 @@
 #include <stdio.h>
-/*
+/**
  * main - Entry
- * Return: always 0
+ * Return: always o
  */
 int main(void)
 {
