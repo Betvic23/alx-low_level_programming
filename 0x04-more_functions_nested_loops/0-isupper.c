@@ -3,6 +3,7 @@
 /**
  * _isupper - checks for uppere case
  * Return: 1 or 0
+ * @c: integer value
  */
 int _isupper(int c)
 {
