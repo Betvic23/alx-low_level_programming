@@ -9,13 +9,15 @@ int is_pal_helper(char *s, int a, int b);
 int is_palindrome(char *s)
 {
 	int len = strlen(s);
-	return is_pal_helper(s, 0, len-1);
+
+	return (is_pal_helper(s, 0, len - 1));
 }
 
 /**
  * is_pal_helper - helps checks for the palindrome
  * @a: int value
  * @b: int value
+ * @s: char pointer
  * Return: 0
  */
 int is_pal_helper(char *s, int a, int b)
@@ -27,7 +29,7 @@ int is_pal_helper(char *s, int a, int b)
 
 	if (s[a] == s[b])
 	{
-		return is_pal_helper(s, a+1, b-1);
+		return (is_pal_helper(s, a + 1, b - 1));
 	}
 	return (0);
 }
