@@ -9,7 +9,7 @@
 char *_strdup(char *str)
 {
 	char *p;
-	size_t len = strlen(str);
+	int a;
 	size_t i;
 
 	if (str == NULL)
@@ -17,14 +17,16 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	p = malloc(sizeof(char) * (len + 1));
+	for (a = 0; str[a] != '\0'; a++)
+
+	p = malloc(sizeof(char) * (a + 1));
 
 	if (p == NULL)
 	{
 		return (NULL);
 	}
 
-	for (i = 0; i <= len; i++)
+	for (i = 0; str[i]; i++)
 	{
 		p[i] = str[i];
 	}
