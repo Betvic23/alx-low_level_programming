@@ -2,10 +2,10 @@
 #define LISTS_H
 
 /**
- * struct list_s - singly linked list
- * @length: length of string
- * @ptr: string
- * @next_node: points to next node
+ * struct my_list - singly linked list
+ * @len: length of string
+ * @str: string
+ * @next: points to next node
  */
 typedef struct my_list
 {
